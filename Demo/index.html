@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <title>RequireJS Demo</title>
+    </head>
+    <body>
+		<p>这是一个 RequireJS Demo</p>
+    	<p>文件结构：</p>
+    	<ul>
+    		<li>
+    			script
+    			<ul>
+    				<li>
+                        base
+                        <ul>
+                            <li>jquery.js</li>
+                            <li>require.js</li>
+                        </ul>
+                    </li>
+    				<li>
+                        widget
+                        <ul>
+                            <li>a.js</li>
+                            <li>b.js</li>
+                        </ul>
+                    </li>
+                    <li>index.js</li>
+    			</ul>
+    		</li>
+    		<li>
+    			index.html
+    		</li>
+    	</ul>
+		<button type="button" id="go_a">点我执行模块B所调用的模块A中的方法</button>
+        <p></p>
+		<p id="result">执行结果：</p>
+		<script data-main="script/index" src="script/base/require.js"></script>
+    </body>
+</html>
